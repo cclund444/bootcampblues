@@ -26,6 +26,6 @@ Jaron Kenyon
 https://github.com/Jaron15
 
 Kristine Etsitty
-
+http://github.com/kvetsitty 
 
 Side Setup notes:
