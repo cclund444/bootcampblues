@@ -8,8 +8,8 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // runs sequelize connection to Mysql
-const sequelize = require("./config/config/connection");
-const { Sequelize } = require('sequelize/types');
+const sequelize = require("./config/connection");
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 //session setup
 const bluesSess = {
@@ -41,7 +41,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 //requires the app to run the api/public routes from the controllers folder
-app.use(require('./controllers'));
+// app.use(require('./controllers'));
 
 // starts the sequlize and post to listen 
 sequelize.sync({ force: false })
