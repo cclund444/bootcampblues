@@ -1,6 +1,6 @@
 // comment routes will be set up here
 const router = require('express').Router();
-const { Comment } = require("../../models/Comment");
+const { Comment } = require("../../models");
 const withAuth = require('../../utils/auth');
 
 // find all get route
@@ -18,7 +18,7 @@ router.post('/', withAuth, (req, res) => {
     Comment.create({
         comment_text: req.body.comment_text,
         user_id: req.session.user_id,
-        post_id: req.body.post_idnpm
+        post_id: req.body.post_id
     })
         .then(dbCommentData => res.json(dbCommentData))
         .catch(err => {

@@ -1,6 +1,6 @@
 // user routes will be set up here
 const router = require('express').Router();
-const { User } = require('../../models/User');
+const { User } = require('../../models');
 
 //find all user route
 router.get('/', (req, res) => {

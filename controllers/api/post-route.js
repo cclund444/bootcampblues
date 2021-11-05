@@ -1,6 +1,6 @@
 // // post routes will be set up here
 const router = require('express').Router();
-const Post  = require('../../models');
+const { Post } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 
@@ -52,7 +52,9 @@ router.put('/:id', withAuth, (req, res) => {
     Post.update(
         {
             title: req.body.title,
-            body: req.body.body
+            body: req.body.body,
+            user_id: req.session.user_id,
+            category_id: req.body.category_id
         },
         {
             where: {
