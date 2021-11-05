@@ -13,6 +13,9 @@ const seedAll = async () => {
     console.log('--------------');
     await seedUsers();
     console.log('--------------');
+    
+    await seedCategories();
+    console.log('--------------');
 
     await seedPosts();
     console.log('--------------');
@@ -20,8 +23,7 @@ const seedAll = async () => {
     await seedComments();
     console.log('--------------');
 
-    await seedCategories();
-    console.log('--------------');
+    
 
     process.exit(0);
 };
