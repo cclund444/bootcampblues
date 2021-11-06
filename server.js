@@ -41,7 +41,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 //requires the app to run the api/public routes from the controllers folder
-// app.use(require('./controllers'));
+app.use(require('./controllers'));
 
 // starts the sequlize and post to listen 
 sequelize.sync({ force: false })
