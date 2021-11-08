@@ -15,12 +15,9 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        post_url: {
+        body: {
             type: DataTypes.STRING,
-            allowNull: true,
-            validate: {
-                isURL: true
-            }
+            allowNull: false,
         },
         user_id: {
             type: DataTypes.INTEGER,
@@ -32,17 +29,18 @@ Post.init(
         category_id: {
             type: DataTypes.INTEGER,
             references: {
-              model: 'category',
-              key: 'id'
-            },
-          }
+                model: 'category',
+                key: 'id'
+            }
+        }
     },
     {
         sequelize,
         freezeTableName: true,
         underscored: true,
-        model: 'post'
+        modelName: 'post'
     }
-);
+)
+
 
 module.exports = Post;
