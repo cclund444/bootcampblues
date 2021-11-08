@@ -65,6 +65,12 @@ const categoryData = [
     {
         category_name: 'Module 23 & 24: Final Project'
     },
+    {
+        category_name: 'General Discussion'
+    },
+    {
+        category_name: 'Introductions'
+    }
 ]
 
 const seedCategories = () => Category.bulkCreate(categoryData);
