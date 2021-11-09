@@ -1,7 +1,32 @@
-<ol class="post-list">
-  {{#each posts as |post|}}
-  <li>
-    {{> post-info post }}
-  </li>
-  {{/each}}
-</ol>
+<div class="container">
+<div class="row">
+    <div class="col-lg-12">
+        <div class="wrapper wrapper-content animated fadeInRight">
+
+            <div class="ibox-content m-b-sm border-bottom">
+                <div class="p-xs">
+                    <div class="pull-left m-r-md">
+                        <i class="fa-solid fa-sun-cloud text-navy mid-icon"></i>
+                    </div>
+                    <h2>Welcome to BootCampBlues</h2>
+                    <span>A safe-space for bootcamp students to connect and learn. Feel free to choose topic you're interested in if you have questions.</span>
+                </div>
+            </div>
+
+            <div class="ibox-content forum-container">
+
+                <div class="forum-title">
+                    <div class="pull-right forum-desc">
+                    </div>
+                    <h3>General Subjects</h3>
+                </div>
+               {{categories.category}}
+               {{#each categories}}
+                {{> categories}}
+                {{/each}}
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
