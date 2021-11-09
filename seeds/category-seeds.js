@@ -3,6 +3,12 @@ const { Category } = require('../models');
 
 const categoryData = [
     {
+        category_name: 'General Discussion'
+    },
+    {
+        category_name: 'Introductions'
+    },
+    {
         category_name: 'Module 1: HTML, CSS, and Git'
     },
     {
@@ -65,12 +71,6 @@ const categoryData = [
     {
         category_name: 'Module 23 & 24: Final Project'
     },
-    {
-        category_name: 'General Discussion'
-    },
-    {
-        category_name: 'Introductions'
-    }
 ]
 
 const seedCategories = () => Category.bulkCreate(categoryData);
