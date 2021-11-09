@@ -1,7 +1,9 @@
 body {
     margin-top:20px;
-    background:rgb(32, 11, 11);
-    font-family: Arial, Helvetica, sans-serif;
+    background:#6e971d;
+    font-display: bold;
+    text-align: center;
+    font-family: Arial, Helvetica;
     }
     .white-bg {
     background-color: #FFFFFF;
@@ -84,15 +86,15 @@ body {
     .fa {
     font-size: 30px;
     margin-top: 8px;
-    color: #1633DA;
+    color: #131416;
     }
     .forum-item.active
     .fa {
-    color: #1633DA;
+    color: #121214;
     }
     .forum-item.active
     a.forum-item-title {
-    color: #1633DA;
+    color: #0f1011;
     }
     @media (max-width: 992px) {
     .forum-info {
@@ -169,7 +171,7 @@ body {
     font-size: 14px;
     }
     .text-navy {
-    color: #1633DA;
+    color: #0f0f13;
     }
     .mid-icon {
     font-size: 66px !important;
@@ -177,3 +179,4 @@ body {
     .m-b-sm {
     margin-bottom: 10px;
     }
+    
