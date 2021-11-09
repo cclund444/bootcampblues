@@ -1,14 +1,15 @@
 const router = require('express').Router();
-const { Post, User, Comment } = require('../../models');
-
+const { Post, User, Comment, Category } = require('../../models');
 // get all posts for homepage
 router.get('/', (req, res) => {
     console.log('==============');
-    Post.findAll()
+    Category.findAll()
         .then(dbPostData => {
-            const posts = dbPostData.map(post => post.get({ plain: true }));
+            console.log(dbPostData);
+            const categories = dbPostData.map(category => category.get({ plain: true }));
+            // console.log('this is my category' + category);
             res.render('homepage', {
-                posts,
+                categories: categories,
                 loggedIn: req.session.loggedIn
             });
         })
