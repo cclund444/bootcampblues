@@ -1,9 +1,12 @@
 body {
     margin-top:20px;
-    background:#6e971d;
+    background:#739432;
     font-display: bold;
     text-align: center;
     font-family: Arial, Helvetica;
+    text-align: center;
+    font-size: large;
+    text-emphasis-color: black;
     }
     .white-bg {
     background-color: #FFFFFF;
