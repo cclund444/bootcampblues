@@ -4,9 +4,9 @@ const { Post, User, Comment, Category } = require('../../models');
 router.get('/', (req, res) => {
     console.log('==============');
     Category.findAll()
-        .then(dbPostData => {
-            console.log(dbPostData);
-            const categories = dbPostData.map(category => category.get({ plain: true }));
+        .then(dbCategoryData => {
+            console.log(dbCategoryData);
+            const categories = dbCategoryData.map(category => category.get({ plain: true }));
             // console.log('this is my category' + category);
             res.render('homepage', {
                 categories: categories,
@@ -21,21 +21,21 @@ router.get('/', (req, res) => {
 
 // get a single post
 router.get('/post/:id', (req, res) => {
-    Post.findOne({
+    Category.findOne({
         where: {
             id: id.params.id
         }
     })
-    .then(dbPostData => {
+    .then(dbCategoryData => {
         if (!dbPostData) {
             res.status(404).json({ message: 'No post found with this id' });
             return;
         }
 
-        const post = dbPostData.get({ plain: true });
+        const category = dbCategoryData.get({ plain: true });
 
         res.render('single-post', {
-            post,
+            category,
             loggedIn: req.session.loggedIn
         });
     })
