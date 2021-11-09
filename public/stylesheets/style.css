@@ -101,7 +101,7 @@ body {
     }
     @media (max-width: 992px) {
     .forum-info {
-    margin: 15px 0 10px 0;
+    margin: 10px 0 5px 0;
     display: none;
     }
     .forum-desc {
@@ -145,8 +145,8 @@ body {
     .ibox-content {
     background-color: #FFFFFF;
     color: inherit;
-    padding: 15px 20px 20px 20px;
-    border-color: #E7EAEC;
+    padding: 5px 10px 10px 10px;
+    border-color: #000000;
     border-image: none;
     border-style: solid solid none;
     border-width: 1px 0;
