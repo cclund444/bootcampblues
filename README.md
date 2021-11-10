@@ -19,10 +19,17 @@ Built with:
 * Connect-session-sequelize
 
 
-Website:
+Repository Link:
 
+https://github.com/cclund444/bootcampblues
 
-Demonstration: 
+Demonstration pictures: 
+
+<img src="views/layouts/images/screenshots for readme/Screenshot 1.jpg">
+<img src="views/layouts/images/screenshots for readme/Screenshot 2.jpg">
+<img src="views/layouts/images/screenshots for readme/Screenshot 3.jpg">
+<img src="views/layouts/images/screenshots for readme/login-signup.jpg">
+<img src="views/layouts/images/screenshots for readme/example 1.jpg">
 
 
 Contibution:
