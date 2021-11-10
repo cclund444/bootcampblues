@@ -8,7 +8,7 @@ const singleCategoryRoutes = require('./single-category-routes');
 
 // using routes and dircting their url path
 router.use('/', homeRoutes);
-router.use('/dashbaord', dashboardRoutes);
+router.use('/dashboard', dashboardRoutes);
 router.use('/single-category', singleCategoryRoutes);
 
 module.exports = router;
