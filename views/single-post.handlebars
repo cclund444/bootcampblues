@@ -4,7 +4,7 @@
         <h4>{{post.body}}</h4>
     </div>
     <div class="meta">
-        By {{user.username}} on 
+        By {{user.username}} on
         {{post.created_at}}
         |
         <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
@@ -12,10 +12,10 @@
 </article>
 {{#if loggedIn}}
 <form class="comment-form">
+    {{> comments post.comments}}
     <div>
         <textarea name="comment-body"></textarea>
     </div>
-{{> comments post.comments}}
     <div>
         <button type="submit">add comment</button>
     </div>
