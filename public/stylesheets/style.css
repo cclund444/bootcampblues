@@ -7,11 +7,11 @@
       padding: 0;
       margin: 0;
       font-family: sans-serif;
-      color: #333;
+      color: rgb(7, 52, 148);
     }
     
     main {
-        background-color: #9866acf7;
+        background-color: #61b8e1f7;
     }
     
     .card {
@@ -57,15 +57,15 @@
     }
     
     a:hover {
-      color: #601f74;
+      color: #1895bb;
     }
     
     .btn-createBtn {
-      background-color: #602382;
+      background-color: #1b549e;
     }
     
     button {
-      background-color: #e3a7f5;
+      background-color: #1b549e;
       border: 0;
       padding: 1%;
       color: white;
@@ -76,7 +76,7 @@
     }
     
     button:hover {
-      background-color: #601f74;
+      background-color: #33c5df;
     }
     ol {
         list-style: none;
@@ -134,12 +134,12 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 1%;
-        background-color: #482248;
+        background-color: #18095c;
         height: 15vh;
       }
     
       header h1 {
-        background-color: #7f388df7;
+        background-color: #658fe9f7;
         width: fit-content;
         padding: 1vh;
         border-radius: 1vh;
@@ -148,11 +148,11 @@
       }
     
       header h1 a {
-          color: #4b254f; 
+          color: #67e3f8; 
       }
     
       header h1 a:hover {
-        color: #3d0f3d;
+        color: #3903b5;
         text-decoration: none;
         font-size: 110%;
         transition: .1s;
@@ -183,11 +183,11 @@
     }
     
     .delete-post-btn {
-      background-color: #b714d4;
+      background-color: #1431d4;
     }
     
     .delete-post-btn:hover {
-      background-color: #521252;
+      background-color: #7db7d1;
     }
     
     .post {
@@ -205,7 +205,7 @@
       display: block;
       margin: -1.5% 0 2% 0;
       margin-top: 1vh;
-      color: #8d2ba5
+      color: #1b549e
     }
     
     .edit-body {
@@ -244,8 +244,8 @@
         justify-content: center;
         padding: 1%;
         font-size: 110%;
-        background-color: #482248;
-        color: #dcbced;
+        background-color: #3903b5;
+        color: #67e3f8;
         font-weight: bold;
         width: 100%;
         text-align: center
