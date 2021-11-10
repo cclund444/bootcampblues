@@ -1,7 +1,13 @@
-<ol class="post-list">
+
+{{#if posts.length }}
+<ul class="post-list">
     {{#each posts as |post|}}
-  <li>
+  
       {{> post-info post}}
-  </li>
+  
   {{/each}}
-</ol>
+</ul>
+{{/if}}
+{{#unless posts.length}}
+<h2>No posts for this Category.</h2>
+{{/unless}}
