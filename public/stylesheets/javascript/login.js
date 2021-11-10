@@ -32,6 +32,7 @@ async function signupFormHandler(event) {
     // selectors will change to match our html
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
+
     const username = document.querySelector('#username-signup').value.trim();
 
     if (email && password && username) {
@@ -41,6 +42,7 @@ async function signupFormHandler(event) {
                 email,
                 password,
                 username
+
             }),
             headers: { 'Content-Type': 'application/json' }
         });

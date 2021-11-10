@@ -5,6 +5,9 @@ router.get('/', (req, res) => {
     console.log('==============');
     Category.findAll()
         .then(dbCategoryData => {
+
+            console.log(dbCategoryData);
+
             const categories = dbCategoryData.map(category => category.get({ plain: true }));
             // console.log('this is my category' + category);
             res.render('homepage', {
@@ -26,14 +29,18 @@ router.get('/categories/:id', (req, res) => {
         }
     })
     .then(dbCategoryData => {
+
         if (!dbCategoryData) {
+
             res.status(404).json({ message: 'No post found with this id' });
             return;
         }
 
         const category = dbCategoryData.get({ plain: true });
 
+
         res.render('single-category', {
+
             category,
             loggedIn: req.session.loggedIn
         });
