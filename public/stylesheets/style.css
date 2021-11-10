@@ -168,6 +168,7 @@ display: table;
     border-style: solid solid none;
     border-width: 3px 0 0;
     color: inherit;
+
     margin-bottom: 0;
     padding: 14px 15px 7px;
     min-height: 48px;
@@ -220,3 +221,18 @@ font-size: 66px !important;
 margin-bottom: 10px;
 }
     
+    display: block;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+    font-size: 14px;
+    }
+    .text-navy {
+    color: #0f0f13;
+    }
+    .mid-icon {
+    font-size: 66px !important;
+    }
+    .m-b-sm {
+    margin-bottom: 10px;
+    }
