@@ -1,13 +1,11 @@
 const router = require('express').Router();
 const { Post, User, Comment, Category } = require('../../models');
-
 // get all posts for homepage
 router.get('/', (req, res) => {
     console.log('==============');
     Category.findAll()
-        .then(dbPostData => {
-            console.log(dbPostData);
-            const categories = dbPostData.map(category => category.get({ plain: true }));
+        .then(dbCategoryData => {
+            const categories = dbCategoryData.map(category => category.get({ plain: true }));
             // console.log('this is my category' + category);
             res.render('homepage', {
                 categories: categories,
@@ -21,22 +19,22 @@ router.get('/', (req, res) => {
 })
 
 // get a single post
-router.get('/post/:id', (req, res) => {
-    Post.findOne({
+router.get('/categories/:id', (req, res) => {
+    Category.findOne({
         where: {
-            id: id.params.id
+            id: req.params.id
         }
     })
-    .then(dbPostData => {
-        if (!dbPostData) {
+    .then(dbCategoryData => {
+        if (!dbCategoryData) {
             res.status(404).json({ message: 'No post found with this id' });
             return;
         }
 
-        const post = dbPostData.get({ plain: true });
+        const category = dbCategoryData.get({ plain: true });
 
-        res.render('single-post', {
-            post,
+        res.render('single-category', {
+            category,
             loggedIn: req.session.loggedIn
         });
     })

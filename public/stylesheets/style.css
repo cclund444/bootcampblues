@@ -1,13 +1,19 @@
 body {
     margin-top:20px;
-    background:rgb(130, 142, 192);
-    font-family: Arial, Helvetica, sans-serif;
+    background:#739432;
+    font-display: bold;
+    text-align: center;
+    font-family: Arial, Helvetica;
+    text-align: center;
+    font-size: large;
+    text-emphasis-color: black;
     }
     .white-bg {
     background-color: #FFFFFF;
     }
     .page-heading {
     border-top: 0;
+    text-align: center;
     padding: 0 10px 20px 10px;
     }
     .forum-post-container
@@ -83,19 +89,19 @@ body {
     .fa {
     font-size: 30px;
     margin-top: 8px;
-    color: #1633DA;
+    color: #131416;
     }
     .forum-item.active
     .fa {
-    color: #1633DA;
+    color: #121214;
     }
     .forum-item.active
     a.forum-item-title {
-    color: #1633DA;
+    color: #0f1011;
     }
     @media (max-width: 992px) {
     .forum-info {
-    margin: 15px 0 10px 0;
+    margin: 10px 0 5px 0;
     display: none;
     }
     .forum-desc {
@@ -139,8 +145,8 @@ body {
     .ibox-content {
     background-color: #FFFFFF;
     color: inherit;
-    padding: 15px 20px 20px 20px;
-    border-color: #E7EAEC;
+    padding: 5px 10px 10px 10px;
+    border-color: #000000;
     border-image: none;
     border-style: solid solid none;
     border-width: 1px 0;
@@ -168,7 +174,7 @@ body {
     font-size: 14px;
     }
     .text-navy {
-    color: #1633DA;
+    color: #0f0f13;
     }
     .mid-icon {
     font-size: 66px !important;
@@ -176,3 +182,4 @@ body {
     .m-b-sm {
     margin-bottom: 10px;
     }
+    

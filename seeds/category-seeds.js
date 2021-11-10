@@ -3,6 +3,12 @@ const { Category } = require('../models');
 
 const categoryData = [
     {
+        category_name: 'General Discussion'
+    },
+    {
+        category_name: 'Introductions'
+    },
+    {
         category_name: 'Module 1: HTML, CSS, and Git'
     },
     {
