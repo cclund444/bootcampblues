@@ -5,8 +5,32 @@ const withAuth = require('../../utils/auth');
 // get all posts for dashboard
 router.get('/', withAuth, (req, res) => {
     console.log(req.session);
-    console.log('==============');
-    Post.findAll()
+    console.log('======================');
+    Post.findAll({
+        where: {
+            user_id: req.session.user_id
+        },
+        attributes: [
+            'id',
+            'body',
+            'title',
+            'created_at'
+        ],
+        include: [
+            {
+                model: Comment,
+                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                include: {
+                    model: User,
+                    attributes: ['email']
+                }
+            },
+            {
+                model: User,
+                attributes: ['email']
+            }
+        ]
+    })
         .then(dbPostData => {
             const posts = dbPostData.map(post => post.get({ plain: true }));
             res.render('dashboard', { posts, loggedIn: true });
@@ -15,11 +39,31 @@ router.get('/', withAuth, (req, res) => {
             console.log(err);
             res.status(500).json(err);
         });
-
 });
 
 router.get('/edit/:id', withAuth, (req, res) => {
-    Post.findByPk(req.params.id)
+    Post.findByPk(req.params.id, {
+        attributes: [
+            'id',
+            'body',
+            'title',
+            'created_at'
+        ],
+        include: [
+            {
+                model: Comment,
+                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                include: {
+                    model: User,
+                    attributes: ['email']
+                }
+            },
+            {
+                model: User,
+                attributes: ['email']
+            }
+        ]
+    })
         .then(dbPostData => {
             if (dbPostData) {
                 const post = dbPostData.get({ plain: true });
@@ -35,7 +79,6 @@ router.get('/edit/:id', withAuth, (req, res) => {
         .catch(err => {
             res.status(500).json(err);
         });
-
 });
 
 module.exports = router;
