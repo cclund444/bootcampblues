@@ -14,16 +14,19 @@ router.get('/', (req, res) => {
 
 // find one category route
 router.get('/:id', (req, res) => {
+    console.log(req.params.id);
     Category.findOne({
+        
         where: {
             id: req.params.id
         }
     })
-        .then(dbCategoryData => res.json(dbCategoryData))
+        .then(dbCategoryData => res.render('single-category', {category: dbCategoryData}))
         .catch(err => {
             console.log(err);
             res.status(500).json(err);
         });
+        
 });
 
 module.exports = router;
