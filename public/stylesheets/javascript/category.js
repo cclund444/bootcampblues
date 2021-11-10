@@ -1,7 +1,7 @@
 async function categoryLinkHandler(event) {
     event.preventDefault();
 
-    const response = await fetch(`/api/categories/${id}`, {
+    const response = await fetch(`/categories/${id}`, {
         method: 'GET',
         include: {
             model: Post,

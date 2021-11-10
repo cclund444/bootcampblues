@@ -39,6 +39,12 @@ const postData = [
         category_id: 15,
     },
     {
+        title: 'test',
+        body: 'testing body',
+        user_id: 2,
+        category_id: 15
+    },
+    {
         title: 'Palms are sweaty, elbows weak, fingertips heavy',
         body: 'Anyone else freaking out over our first project??? I dont know where to start and just wanted to talk to vent about the first project due.',
         user_id: 4,
