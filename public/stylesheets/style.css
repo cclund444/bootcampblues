@@ -1,253 +1,237 @@
-
-    * { box-sizing: border-box;
-    }
-    
-    body, html {
-      height: 100%;
-      padding: 0;
-      margin: 0;
-      font-family: sans-serif;
-      color: rgb(7, 52, 148);
-    }
-    
-    main {
-        background-color: #61b8e1f7;
-    }
-    
-    .card {
-        margin-top: 2vh;
-    }
-    
-    .card-header {
-        color: #bfbfbf
-      }
-    
-    .card-body {
-        background-color: #794e75f7;
-        margin: 2px
-      }
-    
-    nav a {
-        padding: 10px;
-        color: white; 
-    }
-    nav a:hover {
-        color: white;
-        text-decoration: none;
-        font-size: 110%;
-        transition: .3s
-    }
-    
-    #logout {
-        color: white;
-    }
-    
-    #logout:hover {
-        color: white;
-        text-decoration: none;
-        font-size: 110%;
-        transition: .3s
-    
-    }
-    
-    a {
-      text-decoration: none;
-      font-weight: bold;
-      transition: color .1s;
-    }
-    
-    a:hover {
-      color: #1895bb;
-    }
-    
-    .btn-createBtn {
-      background-color: #1b549e;
-    }
-    
-    button {
-      background-color: #1b549e;
-      border: 0;
-      padding: 1%;
-      color: white;
-      font-weight: bold;
-      transition: background-color .1s;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    
-    button:hover {
-      background-color: #33c5df;
-    }
-    ol {
-        list-style: none;
-        margin-top: 2vh;
-      }
-    
-    .post-list {
-      margin: 0;
-      padding: 0;
-    }
-    #post-title {
-        width: 100%
-      }
-      
-      #post-body {
-        width: 100%
-      }
-    
-    textarea, input {
-      padding: .5%;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    
-    textarea:focus, input:focus {
-      outline: none;
-      border: 1px solid #281930;
-    }
-    
-    textarea {
-      min-width: 40%;
-      min-height: 100px;
-    }
-    
-    form > div {
-      margin-bottom: 2%;
-    }
-    
-    form label {
-      display: block;
-    }
-    
-    .wrapper {
-      width: 100%;
-      min-height: 100%;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      
-    }
-    
-    header {
-        border-bottom: 1px solid #ccc;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 1%;
-        background-color: #18095c;
-        height: 15vh;
-      }
-    
-      header h1 {
-        background-color: #658fe9f7;
-        width: fit-content;
-        padding: 1vh;
-        border-radius: 1vh;
-        margin-top: 3vh;
-        box-shadow: 7px 5px 4px #6b6666;
-      }
-    
-      header h1 a {
-          color: #67e3f8; 
-      }
-    
-      header h1 a:hover {
-        color: #3903b5;
-        text-decoration: none;
-        font-size: 110%;
-        transition: .1s;
-    }
-    
-    
-    main {
-      flex: 1;
-      padding: 2% 4%;
-    }
-    
-    .btn-no-style {
-      background: none;
-      border: none;
-      padding: 0;
-      cursor: pointer;
-      text-decoration: none;
-      color: #9e40aa;
-      font-size: 100%;
-      font-weight: bold;
-      transition: color .1s;
-      margin-left: 16px;
-    }
-    
-    .btn-no-style:hover {
-      background: none;
-      color: #30132f;
-    }
-    
-    .delete-post-btn {
-      background-color: #1431d4;
-    }
-    
-    .delete-post-btn:hover {
-      background-color: #7db7d1;
-    }
-    
-    .post {
-      margin-bottom: 2%;
-      line-height: 150%;
-    }
-    
-    .post .title span {
-      font-style: italic;
-      font-size: 90%;
-      color: #7d7d7d;
-    }
-    
-    .edit-link {
-      display: block;
-      margin: -1.5% 0 2% 0;
-      margin-top: 1vh;
-      color: #1b549e
-    }
-    
-    .edit-body {
-      color: rgb(64, 20, 75);
-    }
-    
-    .comment-form {
-        margin-top: 5%;
-      }
-      
-      .comment {
-        padding: 1%;
-        margin-bottom: 1%;
-      }
-      
-      .comment:nth-child(odd) {
-        background-color: #fff5eb;
-      }
-      
-      .comment .meta {
-        font-size: 90%;
-        margin-bottom: .5%;
-        opacity: .6;
-      }
-    
-      .edit-post a {
-        color: #551255
-      }
-      .edit-post-form input {
-          width: 100%
-      }
-    
-    footer {
-        border-top: 1px solid #ccc;
-        display: flex;
-        justify-content: center;
-        padding: 1%;
-        font-size: 110%;
-        background-color: #3903b5;
-        color: #67e3f8;
-        font-weight: bold;
-        width: 100%;
-        text-align: center
-        
-      }
+* { box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: rgb(7, 52, 148);
+}
+.width {
+    width: 80vh;
+    background-color: #18095C;
+    padding: 7px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+main {
+    background-color: #61b8e1f7;
+}
+.titlecss {
+    color: white;
+    -webkit-text-stroke: 2px black;
+    text-align: center;
+}
+.homepage-description {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.forum-item {
+    display: flex;
+    justify-content: center;
+}
+#cat-link {
+    color: white;
+}
+.forum-container {
+    width: 100%;
+}
+.card {
+    margin-top: 2vh;
+}
+.card-header {
+    color: #BFBFBF
+  }
+  .card-body {
+    background-color: white;
+    margin: 2px;
+    font-weight: bold;
+  }
+nav a {
+    padding: 10px;
+    color: white;
+}
+nav a:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 110%;
+    transition: .3s
+}
+#logout {
+    color: white;
+}
+#logout:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 110%;
+    transition: .3s
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color .1s;
+}
+a:hover {
+  color: #1895BB;
+}
+.btn-createBtn {
+  background-color: #1B549E;
+}
+button {
+  background-color: #1B549E;
+  border: 0;
+  padding: 1%;
+  color: white;
+  font-weight: bold;
+  transition: background-color .1s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #33C5DF;
+}
+ol {
+    list-style: none;
+    margin-top: 2vh;
+  }
+.post-list {
+  margin: 0;
+  padding: 0;
+}
+#post-title {
+    width: 100%
+  }
+  #post-body {
+    width: 100%
+  }
+textarea, input {
+  padding: .5%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+textarea:focus, input:focus {
+  outline: none;
+  border: 1px solid #281930;
+}
+textarea {
+  min-width: 40%;
+  min-height: 100px;
+}
+form > div {
+  margin-bottom: 2%;
+}
+form label {
+  display: block;
+}
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+header {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    background-color: #18095C;
+    height: 15vh;
+  }
+  header h1 {
+    background-color: #658fe9f7;
+    width: fit-content;
+    padding: 1vh;
+    border-radius: 1vh;
+    margin-top: 3vh;
+    box-shadow: 7px 5px 4px #6B6666;
+  }
+  header h1 a {
+      color: #67E3F8;
+  }
+  header h1 a:hover {
+    color: #3903B5;
+    text-decoration: none;
+    font-size: 110%;
+    transition: .1s;
+}
+main {
+  flex: 1;
+  padding: 2% 4%;
+}
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: #9E40AA;
+  font-size: 100%;
+  font-weight: bold;
+  transition: color .1s;
+  margin-left: 16px;
+}
+.btn-no-style:hover {
+  background: none;
+  color: #30132F;
+}
+.delete-post-btn {
+  background-color: #1431D4;
+}
+.delete-post-btn:hover {
+  background-color: #7DB7D1;
+}
+.post {
+  margin-bottom: 2%;
+  line-height: 150%;
+}
+.post .title span {
+  font-style: italic;
+  font-size: 90%;
+  color: #7D7D7D;
+}
+.edit-link {
+  display: block;
+  margin: -1.5% 0 2% 0;
+  margin-top: 1vh;
+  color: #1B549E
+}
+.edit-body {
+  color: rgb(64, 20, 75);
+}
+.comment-form {
+    margin-top: 5%;
+  }
+  .comment {
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+  .comment:nth-child(odd) {
+    background-color: #FFF5EB;
+  }
+  .comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+  }
+  .edit-post a {
+    color: #551255
+  }
+  .edit-post-form input {
+      width: 100%
+  }
+footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+    background-color: #3903B5;
+    color: #67E3F8;
+    font-weight: bold;
+    width: 100%;
+    text-align: center
+  }
