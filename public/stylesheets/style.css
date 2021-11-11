@@ -32,6 +32,11 @@ main {
     display: flex;
     justify-content: center;
 }
+#category {
+  width: 100%;
+  margin-bottom: 2vh;
+  border-radius: 5px;
+}
 #cat-link {
     color: white;
 }
