@@ -29,11 +29,6 @@ Deployed WebPage:
 
 https://evening-cliffs-89328.herokuapp.com/
 
-
-Demonstration: 
-
-
-
 Contibution:
 
 Caleb Lund
